@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "REM", sans-serif;
+}
+
+body {
+    background: #eee;
+}
+
+.header {
+    background: #ecbe69;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5.5rem;
+    padding: 0 1.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header .brand-name {
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links-for-small-devices {
+    position: absolute;
+    top: 65%;
+    right: 9%;
+    list-style: none;
+    background-color: #333;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.nav-links-for-small-devices li {
+    width: 100%;
+    padding-left: 1rem;
+}
+
+.nav-links-for-small-devices li:not(:last-child) {
+    border-bottom: 1px solid #ecbe69;
+}
+
+
+
+.nav-links-for-small-devices li a {
+    color: #ecbe69;
+    text-decoration: none;
+    line-height: 2.6rem;
+}
+
+.nav-link {
+    color: #333;
+    font-weight: 600;
+}
+
+.bars {
+    font-size: 1.7rem;
+    display: none;
+}
+
+.main {
+    margin: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+.title-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    color: #333;
+    margin: 2rem 0 0.5rem 0;
+}
+
+.underline {
+    height: 0.2rem;
+    width: 3rem;
+    background: #333;
+    margin-bottom: 2rem;
+}
+
+.blog-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.blog-card {
+    background: #fff;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+iframe {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-food-name {
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+.view-recipe-btn {
+    background: #ecbe69;
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.view-recipe-btn:hover {
+    background: rgb(243, 175, 49);
+}
+
+.card-image {
+    height: 20rem;
+    width: 20rem;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.recipe-upper-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.recipe-image-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-recipe-image {
+    height: 35rem;
+    width: 45rem;
+    border: 2px solid orange;
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* styles.css */
+.table {
+  border-collapse: collapse;
+  width: 20rem; /* Set the desired width for the table */
+}
+
+.table td, .table th {
+  border: 1px solid #333;
+  padding: 8px;
+}
+
+.table strong {
+  color: orange;
+}
+
+.table a {
+  color: #333;
+  text-decoration: none;
+}
+
+.table a:hover {
+  color: orange;
+}
+
+.icon-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.footer {
+    background-color: rgb(255, 226, 175);
+    width: 100%;
+    bottom: 0;
+    color: #333;
+    text-align: center;
+    padding: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+ .the-map {
+    width: 20rem;
+    height: 15rem;
+ }  
+ 
+ .main-recipe-image {
+    width: 20rem;
+    height: 15rem;
+ }
+
+ .header .brand-name {
+    font-size: 1.2rem;
+ }
+ .nav-links {
+    display: none;
+ }
+
+ .bars {
+    display: block;
+ }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+ .the-map {
+    width: 50rem;
+ }   
+
+ .main-recipe-image {
+    width: 40rem;
+    height: 30rem;
+ }
+
+ .header .brand-name {
+    font-size: 1.6rem;
+ }
+
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .the-map {
+    width: 60rem;
+ }   
+}

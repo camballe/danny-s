@@ -1,6 +1,6 @@
 const bars = document.querySelector(".bars");
 const menu = document.querySelector(".nav-links-for-small-devices");
-const body = document.querySelector("body");
+const main = document.querySelector("main");
 
 const toggleMenu = () => {
   if (menu.style.display === "block") {
@@ -14,7 +14,7 @@ const toggleMenu = () => {
   }
 };
 
-body.onclick = () => {
+main.onclick = () => {
   if (menu.style.display === "block") {
     bars.innerHTML = '<i class="fa fa-bars" aria-hidden="true"></i>';
     menu.style.display = "none";

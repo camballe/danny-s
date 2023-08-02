@@ -14,10 +14,9 @@ const toggleMenu = () => {
   }
 };
 
-const closeMenuByClickingAnywhere = () => {
+body.onclick = () => {
   if (menu.style.display === "block") {
     bars.innerHTML = '<i class="fa fa-bars" aria-hidden="true"></i>';
     menu.style.display = "none";
   }
 };
-closeMenuByClickingAnywhere();

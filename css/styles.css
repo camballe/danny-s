@@ -45,34 +45,53 @@ body {
     justify-content: center;
     align-items: center;
     display: none;
+    border: 1px solid #333;
 }
 
 .nav-links-for-small-devices li {
     width: 100%;
-    padding-left: 1rem;
+    
 }
 
-.nav-links-for-small-devices li:not(:last-child) {
-    border-bottom: 1px solid #ecbe69;
+.nav-links-for-small-devices li:not(:first-child) {
+    border-top: 1px solid #ecbe69;
 }
-
-
 
 .nav-links-for-small-devices li a {
     color: #ecbe69;
     text-decoration: none;
     line-height: 2.6rem;
     display: block;
+   
+    text-align: center;
+}
+
+.nav-links-for-small-devices li a:hover, .nav-links-for-small-devices .active {
+    color: #333;
+    background-color: #ecbe69;
+    text-decoration: none;
 }
 
 .nav-link {
-    color: #333;
+    color: hsl(0, 0%, 20%);
     font-weight: 600;
+    text-decoration: none;
+    transition: color .4s;
 }
+
+.nav-link:hover, .nav-links .active {
+    text-decoration: underline;
+}
+
+
 
 .bars {
     font-size: 1.7rem;
     display: none;
+}
+
+.bars:hover {
+    cursor: pointer;
 }
 
 .main {
